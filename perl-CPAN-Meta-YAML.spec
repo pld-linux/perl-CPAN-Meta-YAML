@@ -5,14 +5,15 @@
 %define		pdir	CPAN
 %define		pnam	Meta-YAML
 %include	/usr/lib/rpm/macros.perl
-Summary:	CPAN::Meta::YAML - Read and write a subset of YAML for CPAN Meta files
+Summary:	CPAN::Meta::YAML - read and write a subset of YAML for CPAN Meta files
+Summary(pl.UTF-8):	CPAN::Meta::YAML - odczyt i zapis podzbioru YAML-a dla plików CPAN Meta
 Name:		perl-CPAN-Meta-YAML
 Version:	0.003
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DA/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/CPAN/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	62d0f9726a2b91971b2f3f4ac770de5d
 URL:		http://search.cpan.org/dist/CPAN-Meta-YAML/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -25,6 +26,12 @@ This module implements a subset of the YAML specification for use in
 reading and writing CPAN metadata files like META.yml and MYMETA.yml.
 It should not be used for any other general YAML parsing or generation
 task.
+
+%description -l pl.UTF-8
+Ten moduł jest implementacją podzbioru specyfikacji YAML-a
+przeznaczoną do odczytu i zapisu plików metadanych CPAN, takich jak
+META.yml i MYMETA.yml. Nie powinien być używany do przetwarzania i
+generowania YAML-a w innych celach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -50,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %dir %{perl_vendorlib}/CPAN
 %dir %{perl_vendorlib}/CPAN/Meta
-%{perl_vendorlib}/CPAN/Meta/*.pm
+%{perl_vendorlib}/CPAN/Meta/YAML.pm
 %{_mandir}/man3/CPAN::Meta::YAML.3pm*
