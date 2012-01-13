@@ -8,13 +8,13 @@
 Summary:	CPAN::Meta::YAML - read and write a subset of YAML for CPAN Meta files
 Summary(pl.UTF-8):	CPAN::Meta::YAML - odczyt i zapis podzbioru YAML-a dla plików CPAN Meta
 Name:		perl-CPAN-Meta-YAML
-Version:	0.003
+Version:	0.005
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	62d0f9726a2b91971b2f3f4ac770de5d
+# Source0-md5:	b006f77a16aac0c471ed17c52e1ca648
 URL:		http://search.cpan.org/dist/CPAN-Meta-YAML/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
