@@ -16,10 +16,11 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bdee91cb71ddc7ed1a30abea611be9bb
 URL:		http://search.cpan.org/dist/CPAN-Meta-YAML/
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.17
+BuildRequires:	perl-devel >= 1:5.8.1
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-Test-Simple >= 0.99
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
