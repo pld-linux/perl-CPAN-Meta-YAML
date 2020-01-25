@@ -4,7 +4,6 @@
 #
 %define		pdir	CPAN
 %define		pnam	Meta-YAML
-%include	/usr/lib/rpm/macros.perl
 Summary:	CPAN::Meta::YAML - read and write a subset of YAML for CPAN Meta files
 Summary(pl.UTF-8):	CPAN::Meta::YAML - odczyt i zapis podzbioru YAML-a dla plików CPAN Meta
 Name:		perl-CPAN-Meta-YAML
